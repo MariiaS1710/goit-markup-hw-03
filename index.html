@@ -10,66 +10,78 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
-  <title>homework#1</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+  <title>homework#3</title>
 </head>
 
 <body class="body">
   <!--Шапка секція-->
   <header class="header">
-    <nav class="site-nav">
+    <div class="container header-container">
       <a href="./index.html" lang="en" class="logo"><span class="logo-part">Web</span>Studio</a>
-      <ul class="list">
-        <li><a href="" class="link current">Студія</a></li>
-        <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-        <li><a href="" class="link">Контакти</a></li>
+      <nav class="site-nav">
+        <ul class="list list-header">
+          <li class="header-item"><a href="" class="link current">Студія</a></li>
+          <li class="header-item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+          <li class="header-item"><a href="" class="link">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="contact-wrap">
+        <ul class="list list-header">
+        <li><a href="mailto:info@devstudio.com" class="link mail-footer">info@devstudio.com</a></li>
+        <li><a href="tel:+380961111111" class="link phone-footer">+38 096 11 11 111</a></li>
       </ul>
-    </nav>
-    <ul class="list">
-      <li><a href="mailto:info@devstudio.com" class="link mail-phone-footer">info@devstudio.com</a></li>
-      <li><a href="tel:+380961111111" class="link mail-phone-footer">+38 096 11 11 111</a></li>
-    </ul>
+      </div>
+      
+    </div>
   </header>
   <main>
     <!--Герой секція-->
     <section class="hero">
-      <h1 class="hero-title">ефективні рішення для вашого бізнесу</h1>
-      <button type="button" class="hero-button">Замовити послугу</button>
+      <div class="hero-wrap">
+        <h1 class="hero-title">ефективні рішення для вашого бізнесу</h1>
+        <button type="button" class="hero-button">Замовити послугу</button>
+      </div>
+      
     </section>
     <!--Особливості секція-->
     <section class="features-section">
-      <h2>Особливості</h2>
-      <ul class="list">
-        <li>
+      <div class="container">
+       <h2 class="visually-hidden">Особливості</h2>
+      <ul class="list features-list">
+        <li class="features-item">
           <h3 class="features-title">увага до деталей</h3>
           <p class="features-text">
             ідейні міркування, і навііть початок повсякденної роботи з
             формування позиції.
           </p>
         </li>
-        <li>
+        <li class="features-item">
           <h3 class="features-title">пунктуальність</h3>
           <p class="features-text">
             завдання організації, особливо рамки ш місце навчання кадрів тягне
             у себе.
           </p>
         </li>
-        <li>
+        <li class="features-item">
           <h3 class="features-title">планування</h3>
           <p class="features-text">
             так само консультація з широким активом значною мірою зумовлює
           </p>
         </li>
-        <li>
+        <li class="features-item">
           <h3 class="features-title">сучасні технології</h3>
           <p class="features-text">
             значимість цих проблем настільки очевидна, що реалізація планових
             завдань
           </p>
         </li>
-      </ul>
+      </ul> 
+      </div>
+      
     </section>
     <!-- Чим ми займаємось секція -->
-    <section>
+    <section class="what-we-do-section">
       <h2 class="main-title">Чим ми займаємось</h2>
       <ul class="list">
         <li>
@@ -80,7 +92,7 @@
       </ul>
     </section>
     <!-- Наша команда секція -->
-    <section>
+    <section class="our-team-section">
       <h2 class="main-title">Наша команда</h2>
       <ul>
         <li>

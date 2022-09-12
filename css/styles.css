@@ -8,20 +8,53 @@
     --hero-footer-color:#2F303A;
     --bcg-button-portfolio:#F5F4FA;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+ul,
+p{
+    margin: 0;
+}
+ul{
+    padding-left: 0;
+}
 
 .body{
     font-family: 'Roboto', sans-serif;
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
 }
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 /* Шапка секція */
+.header-container{
+    display: flex;
+    align-items: center;
+}
+.header{
+    padding-bottom: 25px;
+    padding-top: 24px;
+}
 .link{
     color: var(--primary-text-color);
 }
+.header-item:not(:first-child){
+    margin-left: 50px;
+}
+
 .list{
     list-style: none;
      }
+.list-header{
+    display: flex;
+}
 .logo-part{
     color: var(--accent-color);
 }
@@ -33,6 +66,8 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-decoration: none;
+    margin-right: 94px;
+    display: block;
 }
 .link:hover,
 .link:focus {
@@ -49,7 +84,13 @@
 .site-nav .link.current{
     color: var(--accent-color);
 }
-.link.mail-phone-footer{
+.contact-wrap{
+    margin-left: auto;
+}
+.phone-footer{
+    margin-left: 50px;
+}
+.link.mail-footer.phone-footer{
     color: var(--secondary-text-color);
 }
 /* Герой секція */
@@ -64,19 +105,48 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-white-color);
-}
+    margin-bottom: 30px;
+    }
+    .hero-wrap{
+        padding: 200px 452px;
+    }
 .hero-button{
     background-color: var(--accent-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--primary-white-color);
+    margin-left: 692px;
 }
 /*Особливості секція*/
+
+.features-section{
+    padding: 94px 0;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.features-list{
+    display: flex;
+}
+.features-item{
+    width: calc((100%/-90px)/4);
+}
+.features-item:not(:first-child){
+    margin-left: 30px;
+}
 .features-title{
     font-weight: 700;
     font-size: 14px;
@@ -91,6 +161,9 @@
     color: var(--secondary-text-color);
 }
 /* Чим ми займаємось секція */
+.what-we-do-section{
+    padding: 94px 0;
+}
 .main-title{
     font-weight: 700;
     font-size: 36px;
@@ -99,6 +172,9 @@
     letter-spacing: 0.03em;
 }
 /* Наша команда секція */
+.our-team-section{
+    padding: 94px 0;
+}
 .team-title{
     font-weight: 500;
     font-size: 16px;
