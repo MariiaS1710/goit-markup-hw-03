@@ -170,7 +170,18 @@ ul{
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
+.what-we-do-list{
+    display: flex;
+}
+.what-we-do-items{
+    width: calc((100%-60px)/3);
+}
+.what-we-do-items:not(:first-child){
+    margin-left: 30px;
+}
+
 /* Наша команда секція */
 .our-team-section{
     padding: 94px 0;
@@ -181,6 +192,19 @@ ul{
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+.our-team-list{
+    display: flex;
+}
+.our-team-item{
+    width: calc((100%-90px)/4);
+}
+.our-taem-item:not(:first-child){
+    margin-left: 30px;
+}
+.our-team-wrap{
+    padding: 30px 70px;
 }
 .team-text{
     font-size: 16px;
@@ -193,9 +217,15 @@ ul{
 .footer{
     background-color: var(--hero-footer-color);
     color: var(--primary-white-color);
+    padding: 0 0 60px 0;
 }
 .logo-footer{
     color: var(--primary-white-color);
+    display: block;
+    padding: 60px 0 20px 0;
+}
+.footer-list:not(:first-child){
+    margin-top: 9px;
 }
 .adress{
     font-size: 14px;
